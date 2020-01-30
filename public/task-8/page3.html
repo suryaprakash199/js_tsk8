@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="script.css"> 
+</head>
+<body>
+	<form>
+		<input type="text" name="fox" id="result">
+		<input type="text" name="frx" id="result1">
+		<button type="button" onclick="myfunc()">clk</button>
+	</form>
+	<script>
+		function myfunc() {
+		var a = document.getElementById('result').value;
+		var b = document.getElementById('result1').value;
+		var c = { arrow: a, mark: b};		
+		console.log(c);
+		var arr = [];
+		arr.push(c);
+		localStorage.setItem('prakash',JSON.stringify(arr))
+	}
+	</script>
+
+</body>
+</html> -->
+<!DOCTYPE html> 
+
+<html> 
+
+  
+
+<head> 
+
+    <title> 
+
+        Get value of selected 
+
+        radio button 
+
+    </title> 
+
+</head> 
+
+  
+
+<body> 
+
+    <p> 
+
+        Select a radio button and click on Submit. 
+
+    </p> 
+
+      
+
+    Gender: 
+
+    <input type="radio" name="gender" value="Male">Male 
+
+    <input type="radio" name="gender" value="Female">Female 
+
+    <input type="radio" name="gender" value="Others">Others 
+
+      
+
+    <br> 
+
+      
+
+    <button type="button" onclick="displayRadioValue()"> 
+
+        Submit 
+
+    </button> 
+
+      
+
+    <br> 
+
+      
+
+    <div id="result"></div> 
+
+      
+
+    <script> 
+
+        function displayRadioValue() { 
+
+            var ele = document.getElementsByName('gender'); 
+
+              
+
+            for(i = 0; i < ele.length; i++) { 
+
+                if(ele[i].checked) 
+                       var a = "Gender: "+ele[i].value; 
+                   console.log(a);
+
+            } 
+
+        } 
+
+    </script> 
+
+</body> 
+
+</html>
